@@ -1,0 +1,112 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    text-align: center;
+    background: #2196F3;
+    color: #fff;
+    font-size: 2.3rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.par-title {
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.option {
+    color: #fff !important;
+}
+
+.html {
+    background: #F0DB4F !important;
+    border-color: #F0DB4F !important;
+    transition: 2s ease-in-out;
+}
+
+.html:hover {
+    background: #323330 !important;
+    border-color: #323330 !important;
+}
+
+.php {
+    background-color: #474A8A !important;
+    border-color: #474a8a !important;
+    transition: 2s ease-in-out;
+}
+
+.php:hover {
+    background-color: #B0B3D6 !important;
+    border-color: #B0B3D6 !important;
+}
+
+.njs {
+    background: #3C873A !important;
+    border-color: #3C873A !important;
+    transition: 2s ease-in-out;
+}
+
+.njs:hover {
+    background: #303030 !important;
+    border-color: #303030 !important;
+}
+
+.python {
+    background: #4B8BBE !important;
+    border-color: #4B8BBE !important;
+    transition: 2s ease-in-out;
+}
+
+.python:hover {
+    background: #306998 !important;
+    border-color: #306998 !important;
+}
+
+
+
+.courses-added {
+    list-style: none;
+}
+
+.courses {
+    border: 1px solid #e0e0e0;
+    padding: 10px 20px;
+}
+
+.remove {
+    color: red;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background: #c6c6c6 !important;
+    border-color: #c6c6c6 !important;
+}
+
+.success, .error {
+    color: white;
+    padding: 5px;
+    margin: 5px 0 15px 0;
+}
+
+.success {
+    background: green;
+}
+
+.error {
+    background: red;
+}

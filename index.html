@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Skeleton CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title> Marlian App 2.0 </title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h3 class="title"> HNG INTERNSHIP </h3>
+        </header>
+    
+      
+        <div class="course-action">
+            <div>
+                <h3 class="par-title"> Course List </h3>
+                <em>Select any of your choice below</em>
+            </div>
+
+            <div class="course-buttons">
+                <button class="option html">HTML/CSS/Javascript</button>
+                <button class="option php">PHP</button>
+                <button class="option njs">NodeJS</button>
+                <button class="option python">Python</button>
+                
+            </div>
+            <br>
+
+            <h3 class="par-title"> Add More Languages You'd Like To Learn </h3>
+            <!-- <div class="alert u-full-width error">Please type in a Course</div> -->
+            <form class="form-div">
+                <input type="text" placeholder="Course name" class="u-full-width" id="course-name"/>
+                <input type="submit" class="button-primary add-course" value="Add Course" />
+            </form>
+
+            <div class="action-view">
+                <h3 class="par-title"> Courses Added </h3>
+                <div>
+                    <input type="text" id="filter-courses" placeholder="Filter courses..." class="u-full-width" />
+                </div>
+                
+                <ul class="courses-added" id="courses-collection"></ul>
+                
+                <button type="button" class="clear-course"> Clear All Courses </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

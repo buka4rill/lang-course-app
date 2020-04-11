@@ -229,6 +229,16 @@ const UICtrl = (() => {
                 document.querySelector('.alert').remove();
             }, 5000);
         },
+        courseBtnDisable: (e) => {
+            e.target.disabled = true;
+        }, 
+        courseBtnEnable: () => {
+            let courseButtons = document.querySelectorAll(UISelectors.courseBtn);
+
+            for (courseButton of courseButtons) {
+                courseButton.disabled = false;
+            }
+        }
     }
 })();
 
@@ -253,7 +263,7 @@ const App = ((CourseCtrl, UICtrl) => {
         LSCtrl.storeCourse(newCourse);
 
         // Disable button
-        e.target.disabled = true;
+        UICtrl.courseBtnDisable(e);
     }
     
     // 3. Load Event Listener    
@@ -372,9 +382,10 @@ const App = ((CourseCtrl, UICtrl) => {
         LSCtrl.clearCoursesFromStorage();
 
         // Enable course buttons after delete
-        courseButtons.forEach(courseButton => {
-            courseButton.disabled = false;
-        })
+        UICtrl.courseBtnEnable()
+        // courseButtons.forEach(courseButton => {
+        //     courseButton.disabled = false;
+        // })
     }
 
     // 8. Filter Courses Event
